@@ -1,0 +1,45 @@
+<style>
+    body {
+        background: url('https://images.unsplash.com/photo-1533035350251-aa8b8e208d95?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODl8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    }
+
+    form {
+        background-color: white;
+        opacity: 0.8;
+        border: 3px solid black;
+        border-radius: 5px;
+        padding: 10px;
+    }
+</style>
+<% layout('layouts/boilerplate') %>
+
+    <h1>Contact</h1>
+    <div class="container">
+        <form class="form" action="/contacts" method="POST">
+
+            <div class="row mb-4">
+                <div class="col-6">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name">
+                </div>
+                <div class="col-6">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter Your Last Name">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-6">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message">Message</label>
+                <div class="input-group">
+                    <textarea class="form-control" id="message" placeholder="Please enter your message"></textarea>
+                </div>
+            </div>
+            <button class="btn btn-success">Submit!</button>
+
+        </form>
+    </div>

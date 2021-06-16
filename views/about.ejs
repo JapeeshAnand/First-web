@@ -1,0 +1,105 @@
+<style>
+    body {
+        background: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    }
+
+    #about-p1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+        background-color: white;
+        opacity: 0.6;
+        margin: 0 auto;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-pic {
+        display: block;
+        width: 100%;
+        height: 80%;
+        border-radius: 100px;
+        box-shadow: 11px 11px 48px 0 rgb(0 0 0 / 18%);
+    }
+
+    @media screen and (max-width: 479px) {
+        .my-pic {
+            width: 28vw;
+            height: 28vw;
+            border-radius: 100px;
+            box-shadow: 11px 11px 48px 0 rgb(0 0 0 / 18%);
+        }
+    }
+
+    @media (max-width: 200px) {
+        #about-p1 {
+            border: 0px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .my-pic {
+            display: none;
+        }
+    }
+</style>
+<% layout('layouts/boilerplate') %>
+
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-7 col-lg-9" id="about-p1">
+            <h1>Hello there!</h1>
+
+            <p>
+                Being tech-savvy, I was greatly influenced by technology since my childhood and wanted to be
+                involved in
+                the development processes.
+                Hello! Welcome to my profile. My name is Japeesh Singh Anand and I am enrolled in Honours
+                Mathematics @
+                University of Waterloo currently in the 2A term.
+
+                Summary of Qualifications:
+            <ul>
+                <li> Developed organizational and teamwork skills, planning and organizing various events for social
+                    causes
+                    as a part of a team.
+                </li>
+                <li>
+                    Developed skills in various programming languages such as C++, C#, Racket and R by pursuing
+                    courses
+                    in
+                    the field of computer science since high school.
+                </li>
+                <li>
+                    Developed skills in web development and know HTML, CSS, and JavaScript by attending boot camps.
+                </li>
+                <li>
+                    Familiar with concepts of accounting and economics by taking courses at the university.
+                </li>
+                <li>
+                    Ability to multi-task and work within deadlines in a fast-paced environment.
+                </li>
+            </ul>
+            </p>
+
+            <p>
+                I love solving complex problems!
+            </p>
+
+
+            <p>I'm inquisitive by nature and love exploring this beautiful world. I also enjoy volunteering and
+                meeting
+                new
+                people</p>
+
+            <p>Outisde of work, I enjoy travel, soccer and automobiles.</p>
+        </div>
+        <div class="col-0 col-lg-3 col-md-5">
+            <img class="my-pic"
+                src="https://mail.google.com/mail/u/0?ui=2&ik=0b41b41e17&attid=0.1.1&permmsgid=msg-f:1702476799954033606&th=17a069a1239a9bc6&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ9PWLZ5L-WdcjiR4xr42ywtqhjuuK-05oEp0xw9CGZax6uMCvxCZQkpmgOf1eEIJlnOUYkKDL_n5uQpGQxc3WRARPti0p5LmQAXmI-k9LladJ-0_d0ul67Q7Iw&disp=emb"
+                alt="personal pic">
+        </div>
+    </div>
